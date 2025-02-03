@@ -4,7 +4,9 @@ var text = """Фонетическое значение буквы "ë" нево
 
 # Ниже произведите действия над переменной text
 
-
+text = replace(text, "е", "ё")
+text = replace(text, ".", ".\n")
+text = join(map(split(text,"\n"), proc(x : string): string=x.reversed),"\n")
 
 # Не трогайте эту часть кода. Выводить text в консоль не обязательно.
 doAssert text == """.ьтинёцоёрёп онжомзовён "ë" ывкуб ёинёчанз ёоксёчитёноФ
