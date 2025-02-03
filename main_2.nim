@@ -11,7 +11,7 @@ for s in getDirs(""):
 for s in getFiles(""):
   var v = splitfile(s)  
   exts.add(v.ext)
-  files.add(v.name) 
+  files.add(s) 
 
 
 # Не изменяйте код ниже
